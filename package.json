@@ -23,7 +23,7 @@
     "preversion": "yarn run lint",
     "prepublishOnly": "yarn test",
     "build": "tsc",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix"
   },
