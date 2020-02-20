@@ -1,7 +1,7 @@
 import AWSAppSyncClient from 'aws-appsync'
 import AWS from 'aws-sdk'
 import { AppsyncClientOptions } from '../shared/interfaces'
-import { AuthOptionsIAM, AUTH_TYPE } from '../shared/types'
+import { AuthOptionsIAM } from '../shared/types'
 
 export interface AWSIAMOptions  {
   credentials: {
@@ -22,7 +22,7 @@ export function createIAMAppSyncClient(options: AWSIAMOptions & Omit<AppsyncClie
     url: options.url,
     region: options.region,
     auth: {
-      type: AUTH_TYPE.AWS_IAM,
+      type: 'AWS_IAM',
       credentials: AWS.config.credentials
     } as AuthOptionsIAM,
     disableOffline: options.disableOffline ?? true

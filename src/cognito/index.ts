@@ -1,6 +1,6 @@
 import AWSAppSyncClient from 'aws-appsync'
 import AWS from 'aws-sdk'
-import { AuthOptionsOAuth, AUTH_TYPE } from '../shared/types'
+import { AuthOptionsOAuth } from '../shared/types'
 import { AdminInitiateAuthResponse } from 'aws-sdk/clients/cognitoidentityserviceprovider'
 import { getCredentials } from '../utils/cognito'
 
@@ -45,7 +45,7 @@ export function createCognitoUserPoolAppSyncClient(options: AWSCognitoUserPoolOp
     url: options.url,
     region: options.region,
     auth: {
-      type: AUTH_TYPE.AMAZON_COGNITO_USER_POOLS,
+      type: 'AMAZON_COGNITO_USER_POOLS',
       jwtToken: options.auth?.jwtToken(provider, options) ?? jwtToken,
     } as AuthOptionsOAuth,
     disableOffline: options.disableOffline ?? true,
