@@ -25,10 +25,10 @@ npm install --save @iwatakeshi/aws-lambda-appsync
 
 
 ```ts
-import { AWSIAMAppSyncClient, AWSCognitoUserPoolAppSyncClient } from '@iwatakeshi/aws-lambda-appsync'
+import { createIAMAppSyncClient, createCognitoUserPoolAppSyncClient } from '@iwatakeshi/aws-lambda-appsync'
 
 // Create a client using IAM
-const client = AWSIAMAppSyncClient({
+const client = createIAMAppSyncClient({
   url: '...',
   region: process.env.REGION,
   credentials: {
@@ -38,7 +38,7 @@ const client = AWSIAMAppSyncClient({
 })
 
 // Create a client using Cognito User Pool
-const client = AWSCognitoUserPoolAppSyncClient({
+const client = createCognitoUserPoolAppSyncClient({
   url: '...',
   region: process.env.REGION,
   clientId: process.env.CLIENT_ID,

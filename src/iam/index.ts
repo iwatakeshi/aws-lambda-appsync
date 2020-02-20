@@ -12,7 +12,7 @@ export interface AWSIAMOptions  {
 }
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-export function AWSIAMAppSyncClient(options: AWSIAMOptions & Omit<AppsyncClientOptions<AuthOptionsIAM>, 'auth'>) {
+export function createIAMAppSyncClient(options: AWSIAMOptions & Omit<AppsyncClientOptions<AuthOptionsIAM>, 'auth'>) {
   AWS.config.update({
     region: options.region,
     credentials: new AWS.Credentials(options.credentials)

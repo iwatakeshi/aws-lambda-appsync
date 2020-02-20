@@ -16,7 +16,7 @@ export interface AWSCognitoUserPoolOptions  {
 }
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-export function AWSCognitoUserPoolAppSyncClient(options: AWSCognitoUserPoolOptions & {
+export function createCognitoUserPoolAppSyncClient(options: AWSCognitoUserPoolOptions & {
   url: string
   auth?: {
     jwtToken: (provider: AWS.CognitoIdentityServiceProvider, options: AWSCognitoUserPoolOptions) => () => Promise<string>
