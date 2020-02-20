@@ -1,6 +1,6 @@
 {
   "name": "@iwatakeshi/aws-lambda-appsync",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Utilities to simplify GraphQL operations in a lambda function for Appsync",
   "main": "lib/index.js",
   "repository": "git@github.com:iwatakeshi/aws-lambda-appsync.git",
