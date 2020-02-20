@@ -5,7 +5,7 @@
 import { Credentials, CredentialsOptions } from 'aws-sdk/lib/credentials';
 export declare const USER_AGENT_HEADER = "x-amz-user-agent";
 export declare const USER_AGENT: string;
-export declare enum AUTH_TYPE {
+export enum AUTH_TYPE {
     NONE = "NONE",
     API_KEY = "API_KEY",
     AWS_IAM = "AWS_IAM",
