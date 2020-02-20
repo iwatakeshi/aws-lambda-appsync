@@ -1,0 +1,41 @@
+{
+  "name": "@iwatakeshi/aws-lambda-appsync",
+  "version": "1.0.0",
+  "description": "Utilities to simplify GraphQL operations in a lambda function for Appsync",
+  "main": "lib/index.js",
+  "repository": "git@github.com:iwatakeshi/aws-lambda-appsync.git",
+  "author": "Takeshi Iwana <iwatakeshi@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/graphql": "^14.5.0",
+    "@types/node": "^13.7.4",
+    "@types/ws": "^7.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.20.0",
+    "@typescript-eslint/parser": "^2.20.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "prepare": "yarn build",
+    "preversion": "yarn run lint",
+    "prepublishOnly": "yarn test",
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix"
+  },
+  "dependencies": {
+    "@redux-offline/redux-offline": "^2.5.2",
+    "aws-appsync": "^3.0.2",
+    "aws-sdk": "^2.622.0",
+    "graphql-tag": "^2.10.3",
+    "isomorphic-fetch": "^2.2.1",
+    "ws": "^7.2.1"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
