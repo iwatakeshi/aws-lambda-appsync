@@ -1,6 +1,5 @@
 import AWSAppSyncClient from 'aws-appsync'
 import AWS from 'aws-sdk'
-import { AppsyncClientOptions } from '../shared/interfaces'
 import { AuthOptionsOAuth, AUTH_TYPE } from '../shared/types'
 import { AdminInitiateAuthResponse } from 'aws-sdk/clients/cognitoidentityserviceprovider'
 import { getCredentials } from '../utils/cognito'
