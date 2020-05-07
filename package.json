@@ -9,13 +9,13 @@
   "private": false,
   "devDependencies": {
     "@types/graphql": "^14.5.0",
-    "@types/node": "^13.9.1",
-    "@types/ws": "^7.2.2",
-    "@typescript-eslint/eslint-plugin": "^2.23.0",
-    "@typescript-eslint/parser": "^2.23.0",
+    "@types/node": "^13.13.5",
+    "@types/ws": "^7.2.4",
+    "@typescript-eslint/eslint-plugin": "^2.31.0",
+    "@typescript-eslint/parser": "^2.31.0",
     "eslint": "^6.8.0",
-    "jest": "^25.1.0",
-    "ts-jest": "^25.2.1",
+    "jest": "^26.0.1",
+    "ts-jest": "^25.5.0",
     "typescript": "^3.8.3"
   },
   "scripts": {
@@ -29,11 +29,11 @@
   },
   "dependencies": {
     "@redux-offline/redux-offline": "^2.5.2",
-    "aws-appsync": "^3.0.2",
-    "aws-sdk": "^2.639.0",
+    "aws-appsync": "^3.0.3",
+    "aws-sdk": "^2.672.0",
     "graphql-tag": "^2.10.3",
     "isomorphic-fetch": "^2.2.1",
-    "ws": "^7.2.3"
+    "ws": "^7.2.5"
   },
   "files": [
     "lib/**/*"
