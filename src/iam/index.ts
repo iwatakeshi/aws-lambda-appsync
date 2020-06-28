@@ -11,7 +11,6 @@ export interface AWSIAMOptions {
   region: string
 }
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function createIAMAppSyncClient(
   options: AWSIAMOptions & Omit<AppsyncClientOptions<AuthOptionsIAM>, 'auth'>
 ): AWSAppSyncClient<NormalizedCacheObject> {

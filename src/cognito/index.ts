@@ -14,7 +14,6 @@ export interface AWSCognitoUserPoolOptions {
   region: string
 }
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function createCognitoUserPoolAppSyncClient(
   options: AWSCognitoUserPoolOptions & {
     url: string
